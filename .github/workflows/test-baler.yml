@@ -26,6 +26,7 @@ on:
     paths:
       - '**.md'
       - .github/workflows/bad-link-reporter.yml
+      - .github/workflows/test-baler.yml
       - .github/workflows/ignored-urls.txt
   workflow_dispatch:
     inputs:
