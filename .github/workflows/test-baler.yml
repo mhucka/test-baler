@@ -16,6 +16,8 @@ env:
   # Optional file containing a list of URLs to ignore, one per line:
   ignore: '.github/workflows/ignored-urls.txt'
 
+  debug: 'true'
+
 on:
   schedule:
     # Syntax is: "minute  hour  day-of-month  month  day-of-week"
