@@ -16,6 +16,12 @@ env:
   # Optional file containing a list of URLs to ignore, one per line:
   ignore: '.github/workflows/ignored-urls.txt'
 
+  # Number of previous issues to check for duplicate reports.
+  lookback: 5
+
+  # Time (sec) to wait on an unresponsive URL before trying once more.
+  timeout: 15
+
   debug: 'true'
 
 on:
@@ -41,6 +47,10 @@ on:
       ignore:
         description: "File containing URLs to ignore"
         default: '.github/workflows/ignored-urls.txt'
+      timeout:
+        default: 10
+      lookback:
+        default: 10
       debug:
         description: "Debug"
         type: boolean
@@ -58,7 +68,9 @@ jobs:
     steps:
       - uses: caltechlibrary/baler@develop
         with:
-          files:  ${{github.event.inputs.files  || env.files}}
-          labels: ${{github.event.inputs.labels || env.labels}}
-          ignore: ${{github.event.inputs.ignore || env.ignore}}
-          debug:  ${{github.event.inputs.debug  || env.debug}}
+          files:    ${{github.event.inputs.files    || env.files}}
+          labels:   ${{github.event.inputs.labels   || env.labels}}
+          ignore:   ${{github.event.inputs.ignore   || env.ignore}}
+          timeout:  ${{github.event.inputs.debug    || env.timeout}}
+          lookback: ${{github.event.inputs.lookback || env.lookback}}
+          debug:    ${{github.event.inputs.debug    || env.debug}}
