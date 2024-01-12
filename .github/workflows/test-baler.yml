@@ -71,6 +71,6 @@ jobs:
           files:    ${{github.event.inputs.files    || env.files}}
           labels:   ${{github.event.inputs.labels   || env.labels}}
           ignore:   ${{github.event.inputs.ignore   || env.ignore}}
-          timeout:  ${{github.event.inputs.debug    || env.timeout}}
+          timeout:  ${{github.event.inputs.timeout  || env.timeout}}
           lookback: ${{github.event.inputs.lookback || env.lookback}}
           debug:    ${{github.event.inputs.debug    || env.debug}}
