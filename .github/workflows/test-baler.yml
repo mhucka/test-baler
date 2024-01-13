@@ -59,7 +59,7 @@ on:
 run-name: Test links in files
 jobs:
   run-baler:
-    name: Run Bad Link Reporter
+    name: link tests in Markdown files
     runs-on: ubuntu-latest
     permissions:
       issues: write
