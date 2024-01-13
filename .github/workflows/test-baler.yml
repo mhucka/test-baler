@@ -56,10 +56,10 @@ on:
 
 # The rest of this file should be left as-is ─────────────────────────
 
-run-name: Test links in files
+run-name: Test links in Markdown files
 jobs:
   run-baler:
-    name: Run Bad Link Reporter
+    name: Link checker and reporter
     runs-on: ubuntu-latest
     permissions:
       issues: write

@@ -1,6 +1,8 @@
-# Awesome AI for LAM [![Awesome](.graphics/awesome-list-badge.svg)](https://github.com/sindresorhus/awesome)
+# test
 
-A curated list of resources, projects, and tools for using Artificial Intelligence in Libraries, Archives, and Museums.
+[foo](https://bad.badurl)
+
+
 
 ## Contents
 
