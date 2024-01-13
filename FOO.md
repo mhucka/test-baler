@@ -1,5 +1,7 @@
 # test
 
+[foo](https://bad.badurl)
+
 A curated list of resources, projects, and tools for using Artificial Intelligence in Libraries, Archives, and Museums.
 
 ## Contents
