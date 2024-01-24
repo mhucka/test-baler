@@ -2,7 +2,7 @@
 # This is available as the file "sample-workflow.yml" from the source
 # code repository for Baler: https://github.com/caltechlibrary/baler/
 
-name: "Bad Link Reporter"
+name: Bad Link Reporter
 
 # Configure this section ─────────────────────────────────────────────
 
@@ -11,10 +11,10 @@ env:
   files: '*.md'
 
   # Label assigned to issues created by this workflow:
-  labels: 'bug'
+  labels: bug
 
   # Optional file containing a list of URLs to ignore, one per line:
-  ignore: '.github/workflows/ignored-urls.txt'
+  ignore: .github/workflows/ignored-urls.txt
 
   # Number of previous issues to check for duplicate reports.
   lookback: 5
@@ -27,7 +27,7 @@ env:
 on:
   schedule:
     # Syntax is: "minute  hour  day-of-month  month  day-of-week"
-    - cron: "00 04 * * *"
+    - cron: 00 04 * * *
   push:
     paths:
       - '**.md'
