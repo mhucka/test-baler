@@ -35,24 +35,24 @@ on:
       - .github/workflows/test-baler.yml
       - .github/workflows/ignored-urls.txt
   workflow_dispatch:
-    inputs:
-      files:
-        description: "Comma-separated paths or regexp's"
-        default: '*.md'
-      labels:
-        description: "Comma-separated issue labels"
-        default: 'bug'
-      ignore:
-        description: "File containing URLs to ignore"
-        default: '.github/workflows/ignored-urls.txt'
-      timeout:
-        default: 10
-      lookback:
-        default: 10
-      debug:
-        description: "Debug"
-        type: boolean
-        default: true
+    # inputs:
+    #   files:
+    #     description: "Comma-separated paths or regexp's"
+    #     default: '*.md'
+    #   labels:
+    #     description: "Comma-separated issue labels"
+    #     default: 'bug'
+    #   ignore:
+    #     description: "File containing URLs to ignore"
+    #     default: '.github/workflows/ignored-urls.txt'
+    #   timeout:
+    #     default: 10
+    #   lookback:
+    #     default: 10
+    #   debug:
+    #     description: "Debug"
+    #     type: boolean
+    #     default: true
 
 # The rest of this file should be left as-is ─────────────────────────
 
