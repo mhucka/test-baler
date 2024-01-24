@@ -1,5 +1,3 @@
----
-
 rules:
   colons:
     max-spaces-after: -1
@@ -7,4 +5,3 @@ rules:
       present: false
   document-end:
       present: false
-
