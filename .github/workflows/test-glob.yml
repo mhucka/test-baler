@@ -5,7 +5,7 @@ on:
 
 run-name: Test links in files
 jobs:
-  run-baler:
+  run-glob:
     runs-on: ubuntu-latest
     steps:
     - name: Check out source repository.
