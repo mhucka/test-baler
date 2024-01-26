@@ -3,18 +3,14 @@ name: test tj-glob
 on:
   workflow_dispatch
 
-run-name: Test links in files
 jobs:
   run-glob:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out source repository.
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 2
 
-    - name: Get list of all files matching the desired pattern.
-      uses: tj-actions/glob@v19
-      id: match-files
+    - uses: tj-actions/glob@v19
       with:
         files: '*.md'
