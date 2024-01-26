@@ -1,0 +1,18 @@
+name: test tj-glob
+
+run-name: Test links in files
+jobs:
+  run-baler:
+    steps:
+    - name: Check out source repository.
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+        persist-credentials: true
+
+    - name: Get list of all files matching the desired pattern.
+      uses: tj-actions/glob@v19
+      id: match-files
+      with:
+        files: '*.md'
+
