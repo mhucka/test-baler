@@ -11,6 +11,6 @@ jobs:
       with:
         fetch-depth: 2
 
-    - uses: tj-actions/glob@v19
+    - uses: tj-actions/glob@v20
       with:
         files: '*.md'
