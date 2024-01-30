@@ -64,7 +64,7 @@ jobs:
     permissions:
       issues: write
     steps:
-      - uses: caltechlibrary/baler@v1
+      - uses: caltechlibrary/baler@v2
         with:
           files:    ${{github.event.inputs.files    || env.files}}
           labels:   ${{github.event.inputs.labels   || env.labels}}
