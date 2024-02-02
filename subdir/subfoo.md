@@ -1,4 +1,4 @@
 # subfoo
 
-[foo](https://foofoofoo.com)
+[foo](https://aladskladfskladskldsa.com)
 [foo](https://example.com)
