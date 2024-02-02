@@ -8,7 +8,8 @@ name: Bad Link Reporter
 
 env:
   # Files examined by the workflow:
-  files: ['*.md']
+  files:
+    - '**/*.md'
 
   # Label assigned to issues created by this workflow:
   labels: bug
