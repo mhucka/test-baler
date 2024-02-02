@@ -10,7 +10,7 @@ env:
   # Files examined by the workflow:
   files: |
     *.md
-    subdir/**/*.md
+    **/*.md
 
   # Label assigned to issues created by this workflow:
   labels: bug
